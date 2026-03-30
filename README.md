@@ -43,6 +43,8 @@ You can either manually type this in your browser or the `Vite` output should co
 
 ## Task
 
+**Please don't spend longer than 30 minutes on this task**
+
 1. Create a branch with your name - e.g. `john-smith`.
 2. Write some test cases for the checkout application, it's up to you to decide what tests to write, how many, and
 how to structure them. You should put your tests in the `cypress/e2e` folder.
