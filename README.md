@@ -16,9 +16,9 @@ To check the version of `nvm` installed run:
 nvm -v
 ```
 
-If `node` is installed (and the version is 22 or higher) continue 'Running the application'.
+If `node` is *installed* (and the version is 22 or higher) continue 'Running the application'.
 
-If `node` is not installed, but you have `nvm` installed, running the following command will install the latest version
+If `node` is *not installed*, but you have `nvm` installed, running the following command will install the latest version
 ```bash
 nvm install lts
 ```
