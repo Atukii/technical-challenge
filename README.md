@@ -6,12 +6,12 @@ For this task you need to have `Node.js` installed (node 24). Ideally you'd alre
 
 ### Checking versions
 
-To check the version of `node` installed run
+To check the version of `node` installed run:
 ```bash
 node -v
 ```
 
-To check the version of `nvm` installed run
+To check the version of `nvm` installed run:
 ```bash
 nvm -v
 ```
@@ -27,7 +27,19 @@ If neither are installed, start by installing `nvm` buy following the installati
 
 ### Running the application
 
-To run the application you're going to test, you can run `npm run dev` this should build and run the application and it will be accessible on `http://localhost:5173`. You can either manually type this in your browser or the `Vite` output should contain a link (if using VS Code holding CTRL + clicking the link will open it in the browser).
+To run the application you're going to test you first need to install the dependencies, to do this run:
+```bash
+npm install
+```
+
+To start the application you can then run:
+```bash
+npm run dev
+```
+
+This should build and run the application and it will be accessible on `http://localhost:5173`. 
+
+You can either manually type this in your browser or the `Vite` output should contain a link (if using VS Code holding CTRL + clicking the link will open it in the browser).
 
 ## Task
 Write some test cases for the checkout application, it's up to you to decide what tests to write, how many, and
