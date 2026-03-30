@@ -16,7 +16,7 @@ To check the version of `nvm` installed run:
 nvm -v
 ```
 
-If `node` is installed (and the version is 22 or higher) continue with the remaining setup.
+If `node` is installed (and the version is 22 or higher) continue 'Running the application'.
 
 If `node` is not installed, but you have `nvm` installed, running the following command will install the latest version
 ```bash
@@ -42,8 +42,11 @@ This should build and run the application and it will be accessible on `http://l
 You can either manually type this in your browser or the `Vite` output should contain a link (if using VS Code holding CTRL + clicking the link will open it in the browser).
 
 ## Task
-Write some test cases for the checkout application, it's up to you to decide what tests to write, how many, and
+
+1. Create a branch with your name - e.g. `john-smith`.
+2. Write some test cases for the checkout application, it's up to you to decide what tests to write, how many, and
 how to structure them. You should put your tests in the `cypress/e2e` folder.
+3. Push your changes to the repository and create a pull request to the `main` branch.
 
 ### Tips
 - A valid promo code is `SAVE10`
@@ -51,8 +54,6 @@ how to structure them. You should put your tests in the `cypress/e2e` folder.
 - You don't need to change anything in the application, but you can view the code in `src/components/Checkout.vue` if
   you feel that would be beneficial
 - Consider Cypress functionality/configuration *outside* of tests themselves
-- You can ignore the `dist` folder
-
 
 ## Running Cypress Tests
 
@@ -67,7 +68,7 @@ This opens the Cypress test runner where you can:
 - Debug individual tests
 - Watch test execution in real-time
 
-try use headless if you can - if you get stuck without it, we can workaround it.
+try use headless if you can - if you get stuck without it, we can workaround it. *Note: Only applicable for live interview sessions*
 
 ### Run tests headlessly
 ```bash
@@ -99,6 +100,9 @@ describe('Feature Name', () => {
 
 ## Troubleshooting
 
+### Can't run Cypress UI
+- There is a known bug where Cypress tries to launch and the 'Welcome' screen has an embedded image, this sometimes crashes, the workaround is to click the 'Continue' button before the crash happens, this won't happen again. [You can find more info on the Cypress Github if interested](https://github.com/cypress-io/cypress/issues/31072#issuecomment-2813506040)
+
 ### Cypress can't find elements
 - Verify you're using the correct data-testid
 
@@ -106,5 +110,4 @@ describe('Feature Name', () => {
 - The payment has a 50% random failure rate. This is intentional for testing error handling.
 
 ### Tests timing out
-- Cypress auto-waits for elements (default 4s timeout)
-- Extend with `cy.get(..., { timeout: 10000 })`
+- Cypress auto-waits for elements (default 4s timeout), this could be a problem, how could your test work around this?
