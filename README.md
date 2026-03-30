@@ -1,5 +1,34 @@
 # Shopping trolley Checkout - Technical Interview Challenge
 
+## Setup
+
+For this task you need to have `Node.js` installed (node 24). Ideally you'd already have it installed using `nvm`.
+
+### Checking versions
+
+To check the version of `node` installed run
+```bash
+node -v
+```
+
+To check the version of `nvm` installed run
+```bash
+nvm -v
+```
+
+If `node` is installed (and the version is 22 or higher) continue with the remaining setup.
+
+If `node` is not installed, but you have `nvm` installed, running the following command will install the latest version
+```bash
+nvm install lts
+```
+
+If neither are installed, start by installing `nvm` buy following the installation instructions on [the `nvm` repository](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating). Once installed, you can install the latest version of `node`
+
+### Running the application
+
+To run the application you're going to test, you can run `npm run dev` this should build and run the application and it will be accessible on `http://localhost:5173`. You can either manually type this in your browser or the `Vite` output should contain a link (if using VS Code holding CTRL + clicking the link will open it in the browser).
+
 ## Task
 Write some test cases for the checkout application, it's up to you to decide what tests to write, how many, and
 how to structure them. You should put your tests in the `cypress/e2e` folder.
@@ -12,7 +41,6 @@ how to structure them. You should put your tests in the `cypress/e2e` folder.
 - Consider Cypress functionality/configuration *outside* of tests themselves
 - You can ignore the `dist` folder
 
-The application will be available at `http://localhost:5173`
 
 ## Running Cypress Tests
 
