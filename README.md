@@ -6,6 +6,8 @@ For this task you need to have `Node.js` installed (node 24). Ideally you'd alre
 
 ### Checking versions
 
+**Note: If either of the commands fail to return a version, it might mean that you don't have the package installed.**
+
 To check the version of `node` installed run:
 ```bash
 node -v
